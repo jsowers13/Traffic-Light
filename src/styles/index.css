@@ -10,3 +10,20 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.lightBox{
+    background-color: black;
+    height: 700px;
+    width: 250px;
+    border-radius: 5%;
+   
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+}
+.lightTop{
+    width: 25px;
+    background:black;
+    height: 100px;
+}
