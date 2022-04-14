@@ -3,6 +3,8 @@ import { useState } from "react";
 
 const Light = () => {
 	const [selectedColor, setSelectedColor] = useState("none");
+	let colors = ["red", "yellow", "green"];
+	const [lightsOn, setLightsOn] = useState(false);
 
 	return (
 		<div className="vw-100 vh-100 d-flex flex-column align-items-center">
@@ -27,6 +29,11 @@ const Light = () => {
 						(selectedColor === "green" ? " glowGreen" : "")
 					}></div>
 			</div>
+			<button
+				className="btn btn-primary m-3"
+				onClick={() => setLightsOn(true)}>
+				Click to Start Lights
+			</button>
 		</div>
 	);
 };
